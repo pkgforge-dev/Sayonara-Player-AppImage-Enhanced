@@ -11,8 +11,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=/usr/share/icons/hicolor/256x256/apps/sayonara.png
 export DESKTOP=/usr/share/applications/com.sayonara-player.Sayonara.desktop
 export STARTUPWMCLASS=com.sayonara-player.Sayonara
-export DEPLOY_QT=1
-export QT_DIR=qt5
+export USE_HOST_DRIVERS_EXPERIMENTAL=1
 
 # on archlinux qt5-wayland also adds the server side plugins
 # remove them so that they do not get deployed
