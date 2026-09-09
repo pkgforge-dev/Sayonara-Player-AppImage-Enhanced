@@ -48,8 +48,8 @@ if [ "${DEVEL_RELEASE-}" = 1 ]; then
     git clone --depth 1 "$REPO" ./sayonara
 else
 	echo "Making stable build of Sayonara Player..."
-	VERSION="$(git ls-remote --tags --sort="v:refname" "$REPO" | tail -n1 | sed 's/.*\///; s/\^{}//; s/^v//')"
-	git clone --branch v"$VERSION" --single-branch --depth 1 "$REPO" ./sayonara
+	VERSION="$(git ls-remote --tags --sort="v:refname" "$REPO" | tail -n1 | sed 's/.*\///; s/\^{}//')"
+    git clone --branch "$VERSION" --single-branch --depth 1 "$REPO" ./sayonara
 fi
 echo "$VERSION" > ~/version
 
