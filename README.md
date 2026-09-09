@@ -11,9 +11,9 @@
 </p>
 
 
-| Latest Stable Release | Upstream URL |
-| :---: | :---: |
-| [Click here](https://github.com/pkgforge-dev/Sayonara-Player-AppImage-Enhanced/releases/latest) | [Click here](https://gitlab.com/luciocarreras/sayonara-player) |
+| Latest Stable Release | Latest Nightly Release | Upstream URL |
+| :---: | :---: | :---: |
+| [Click here](https://github.com/pkgforge-dev/Sayonara-Player-AppImage-Enhanced/releases/latest) | [Click here](https://github.com/pkgforge-dev/Sayonara-Player-AppImage-Enhanced/releases/tag/nightly) | [Click here](https://gitlab.com/luciocarreras/sayonara-player) |
 
 </div>
 
