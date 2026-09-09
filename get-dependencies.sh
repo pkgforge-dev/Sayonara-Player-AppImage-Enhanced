@@ -8,8 +8,6 @@ echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm   \
     cmake                 \
-    glib2                 \
-    glibc                 \
     gst-libav             \
     gst-plugins-bad       \
     gst-plugins-base      \
@@ -18,25 +16,16 @@ pacman -Syu --noconfirm   \
     gst-plugins-ugly      \
     gstreamer             \
     hicolor-icon-theme    \
-    libgcc                \
-    libstdc++             \
     python-dbus           \
     qt5-base              \
     qt5-svg               \
     qt5-tools             \
     qt5-wayland           \
-    taglib                \
-    xorg-server-xvfb      \
-    zlib
+    taglib
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
-
-# Comment this out if you need an AUR package
-#make-aur-package sayonara-player
-
-# If the application needs to be manually built that has to be done down here
 
 echo "Building Sayonara Player..."
 echo "---------------------------------------------------------------"
