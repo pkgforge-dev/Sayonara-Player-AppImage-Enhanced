@@ -42,9 +42,6 @@ else
 fi
 echo "$VERSION" > ~/version
 
-cmake -B build -S sayonara \
-    -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_INSTALL_PREFIX=/usr \
-    -DWITH_TESTS=0
+cmake -B build -S ./sayonara -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DWITH_TESTS=0
 cmake --build build -j$(nproc)
 cmake --install build
